@@ -5,9 +5,132 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: var(--gradient);
+  animation: bg-animation 3s infinite alternate;
+  background-size: 250%;
+}
+
+:root {
+  --gradient: linear-gradient(
+    225deg,
+    rgba(224, 215, 147, 0.8),
+    rgba(130, 185, 221, 0.8),
+    rgba(70, 223, 183, 0.5),
+    rgba(120, 173, 215, 0.8),
+    rgba(124, 154, 180, 0.8),
+    rgba(159, 160, 183, 0.8),
+    rgba(166, 199, 212, 0.8),
+    rgba(169, 174, 205, 0.8),
+    rgba(204, 89, 212, 0.5),
+    rgba(112, 104, 226, 0.5)
+  );
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-bar {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px 10px 0px;
+  color: darkorange;
+  position: sticky;
+  border-bottom: 2px solid firebrick;
+}
+
+.nav-bar a.active {
+  color: orange;
+  background-color: firebrick;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App p {
+  margin: 5px;
+}
+
+.footer-body {
+  background-color: lightcoral;
+  color: firebrick;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.proj-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proj-card {
+  border: red 1px solid;
+  /* width: max(600px, 50%); */
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 0.5fr repeat(2, 1fr) 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-bottom: 20px;
+}
+.proj-card-title {
+  grid-area: 1 / 1 / 2 / 6;
+  border: red 1px solid;
+}
+.proj-card-picbox {
+  grid-area: 2 / 1 / 4 / 3;
+  border: red 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.proj-card-info {
+  grid-area: 2 / 3 / 4 / 6;
+  border: red 1px solid;
+}
+
+.proj-card-btns-cont {
+  grid-area: 4 / 1 / 5 / 6;
+  border: red 1px solid;
+  display: flex;
+  justify-content: center;
+}
+
+.proj-btns {
+  border: red 1px solid;
+  color: darkblue;
+  padding: 0px 10px 0px 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj-pic {
+  margin: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .proj-card {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.5fr repeat(4, 1fr) 0.5fr;
+  }
+  .proj-card-title {grid-area: 1 / 1 / 2 / 6}
+  .proj-card-picbox {grid-area: 2 / 1 / 4 / 6}
+  .proj-card-info {grid-area: 4 / 1 / 6 / 6}
+  .proj-card-btns-cont {grid-area: 6 / 1 / 7 / 6}
+}
+
+.hero-body {
+  min-height: 100vh;
 }

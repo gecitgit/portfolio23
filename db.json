@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "title": "Project 1",
+            "subtitle": "subtitle text -- quick sell",
+            "summary": "it's a project -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt a justo id tempus. Etiam molestie aliquet ipsum sed tincidunt. Proin lobortis, nisl vel porttitor efficitur, turpis sem accumsan arcu, in laoreet lorem urna sed magna. Sed sed laoreet metus. Donec vestibulum fringilla venenatis. In ullamcorper sem velit, vel cursus lectus congue sit amet. In lobortis auctor posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "pic": "https://placehold.co/250x150/000000/FFF",
+            "alttext": "alt text for pic",
+            "gitlink": "https://github.com/gecitgit",
+            "livelink": "https://gecitgit.github.io/Phase-1-AM-Project/",
+            "readmore": "https://medium.com/@t.ismailgeci/phase-1-project-getting-my-feet-wet-in-the-coding-world-d4c193c3afb5",
+            "tech": "HTML, probably JS?",
+            "id": 1
+        },
+        {
+            "title": "Project 2",
+            "summary": "it's another project --- uet ipsum sed tincidunt. Proin lobortis, nisl vel porttitor efficitur, turpis sem accumsan arcu, in laoreet lorem urna sed magna. Sed sed l",
+            "pic": "https://placehold.co/250x150/000000/FFF",
+            "gitlink": "[git link here]",
+            "livelink": "[live link here]",
+            "tech": "HTML",
+            "id": 2
+        }
+    ]
+}
