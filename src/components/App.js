@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import { Element } from "react-scroll";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
@@ -10,7 +10,7 @@ import Hero from "./Hero";
 import data from "./data.json";
 
 function App() {
-  const [projs, setProjs] = useState([]);
+  // const [projs, setProjs] = useState([]);
   const [showScroll, setShowScroll] = useState(false);
 
   const projectData = data.projects;

@@ -14,9 +14,9 @@ function ProjTile({proj}) {
             </div>
             <div className="proj-card-info">
                 <p>Summary: {proj.summary}</p>
-                <img src="./images/icons8-html-50.png" />
-                <img src="./images/icons8-css3-50.png" />
-                <img src="./images/icons8-javascript-50.png" />
+                <img alt="HTML icon" src="./images/icons8-html-50.png" />
+                <img alt="CSS icon" src="./images/icons8-css3-50.png" />
+                <img alt="JS icon" src="./images/icons8-javascript-50.png" />
             </div>
             <div className="proj-card-btns-cont">
                 <Link to={proj.livelink} target="_blank" className="proj-btns">Live Demo</Link>
