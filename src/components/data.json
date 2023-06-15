@@ -1,8 +1,8 @@
 {
     "projects": [
         {
-            "title": "Project 1",
-            "subtitle": "subtitle text -- quick sell",
+            "title": "Mr T's Gradebook",
+            "subtitle": "A React frontend sitting on a Sinatra Ruby API. Keep track of your students and all of their assignments.",
             "summary": "it's a project -- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt a justo id tempus. Etiam molestie aliquet ipsum sed tincidunt. Proin lobortis, nisl vel porttitor efficitur, turpis sem accumsan arcu, in laoreet lorem urna sed magna. Sed sed laoreet metus. Donec vestibulum fringilla venenatis. In ullamcorper sem velit, vel cursus lectus congue sit amet. In lobortis auctor posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "pic": "https://placehold.co/250x150/000000/FFF",
             "alttext": "alt text for pic",
@@ -13,13 +13,24 @@
             "id": 1
         },
         {
-            "title": "Project 2",
+            "title": "MindLOG!",
+            "subtitle": "Mood log built fully in React. Utilizes the Recharts library to provide users with data." ,
             "summary": "it's another project --- uet ipsum sed tincidunt. Proin lobortis, nisl vel porttitor efficitur, turpis sem accumsan arcu, in laoreet lorem urna sed magna. Sed sed l",
             "pic": "https://placehold.co/250x150/000000/FFF",
             "gitlink": "[git link here]",
             "livelink": "[live link here]",
             "tech": "HTML",
             "id": 2
+        },
+        {
+            "title": "Manga Search App",
+            "subtitle": "Vanilla HTML, CSS and JS. API requests fuel this scraper.",
+            "summary": "blah blajjdsfij",
+            "pic" : "https://placehold.co/250x150/000000/FFF",
+            "gitlink": "[git link here]",
+            "livelink": "[live link here]",
+            "tech": "HTML, probably JS?",
+            "id": 3
         }
     ]
 }
