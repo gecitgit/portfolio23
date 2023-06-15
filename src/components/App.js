@@ -35,7 +35,19 @@ function App() {
 
   return (
     <div className="App">
-      <p>there's a new king in this jungle</p>
+      <NavBar />
+      <Element className="bodySection" name="hero"><Hero /></Element>
+      <Element className="bodySection" name="about"><About /></Element>
+      <Element className="bodySection" name="projects"><Projects projectData={projectData} /></Element>
+      <Element className="bodySection" name="contact"><Contact /></Element>
+      <Element className="scroll-to-top-button" name="scrollToTopButton">
+        {showScroll && (
+          <button onClick={scrollToTop} className="scroll-to-top-button__button">
+            CLICK IT
+          </button>
+        )}
+      </Element>
+      <Footer />
     </div>
   )
 }
