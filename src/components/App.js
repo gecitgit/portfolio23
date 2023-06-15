@@ -3,34 +3,50 @@ import { Link } from "react-scroll";
 import { Element } from "react-scroll";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
-import Resume from "./Resume";
+import Contact from "./Contact";
 import Footer from "./Footer";
 import About from "./About";
 import Hero from "./Hero";
+import data from "./data.json";
 
 function App() {
   const [projs, setProjs] = useState([]);
+  const [showScroll, setShowScroll] = useState(false);
+
+  const projectData = data.projects;
+  console.log("project data: ", projectData)
 
   useEffect(() => {
-    fetch("http://localhost:4000/projects")
-      .then((r) => r.json())
-      .then((data) => setProjs(data));
-  }, []);
+    window.addEventListener("scroll", () => {
+      if(window.scrollY > 500) {
+        setShowScroll(true)
+      } else {
+        setShowScroll(false)
+      }
+    })
+  }, [])
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
-  return(
+  return (
     <div className="App">
       <NavBar />
-      <Hero />
-      <About />
-      <Projects projs={projs} />
-      <Resume />
-      {/* <Routes>
-        <Route path="/projects" element={<Projects projs={projs}/>} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/" element={<Home />} />
-      </Routes> */}
+      <Element className="bodySection" name="hero"><Hero /></Element>
+      <Element className="bodySection" name="about"><About /></Element>
+      <Element className="bodySection" name="projects"><Projects projectData={projectData} /></Element>
+      <Element className="bodySection" name="contact"><Contact /></Element>
+      <Element className="scroll-to-top-button" name="scrollToTopButton">
+        {showScroll && (
+          <button onClick={scrollToTop} className="scroll-to-top-button__button">
+            CLICK IT
+          </button>
+        )}
+      </Element>
       <Footer />
     </div>
   )

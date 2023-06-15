@@ -38,7 +38,9 @@ code {
   padding: 10px 0px 10px 0px;
   color: darkorange;
   position: sticky;
+  top: 0;
   border-bottom: 2px solid firebrick;
+  flex: 0 0 auto;
 }
 
 .nav-bar a.active {
@@ -133,4 +135,48 @@ code {
 
 .hero-body {
   min-height: 100vh;
+}
+
+.bodySection {
+  min-height: 100vh;
+  padding: 10px;
+  border: 1px green solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+}
+.bodySection[name="hero"] {
+  background-color: rgba(0, 255, 255, 0.24);
+}
+.bodySection[name="about"] {
+  background-color: rgba(175, 89, 255, 0.315);
+}
+.bodySection[name="projects"] {
+  background-color: rgba(236, 98, 125, 0.452);
+}
+.bodySection[name="contact"] {
+  background-color: rgba(218, 165, 32, 0.473);
+}
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999;
+}
+
+.scroll-to-top-button__button {
+  background-color: #007bff;
+  color: #fff;
+  border: 2px orange solid;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-to-top-button__button:hover {
+  background-color: #0056b3;
 }
