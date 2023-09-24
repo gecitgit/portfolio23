@@ -1,20 +1,17 @@
 import React, { useEffect, useState } from "react";
-// import { Link } from "react-scroll";
 import { Element } from "react-scroll";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import Footer from "./Footer";
 import About from "./About";
 import Hero from "./Hero";
 import data from "./data.json";
+import { TbArrowBarToUp } from "react-icons/tb";
 
 function App() {
-  // const [projs, setProjs] = useState([]);
   const [showScroll, setShowScroll] = useState(false);
 
   const projectData = data.projects;
-  console.log("project data: ", projectData)
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -43,21 +40,11 @@ function App() {
       <Element className="scroll-to-top-button" name="scrollToTopButton">
         {showScroll && (
           <button onClick={scrollToTop} className="scroll-to-top-button__button">
-            CLICK IT
+            <TbArrowBarToUp  size={30}/>
           </button>
         )}
       </Element>
-      <Footer />
     </div>
   )
 }
-
 export default App;
-
-//home, about, projects, resume, 
-
-//run the site with:
-//npm start
-//    runs the react app
-//json-server --watch db.json --port 4000
-//    starts the json server on port 4000

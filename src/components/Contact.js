@@ -1,11 +1,25 @@
 import React from "react";
+import { TbBrandLinkedin, TbBrandGithub } from "react-icons/tb";
+import ContactForm from './contactform';
 
 function Contact() {
     return (
-        <div>
-            <h1>Resume</h1>
-            <p>Resume body</p>
-            <button>Download Resume</button>
+        <div className="contact-info">
+            <div>
+                <h1>Let's Build Together!</h1>
+                <div>
+                    <a href="https://www.linkedin.com/in/taulantismailgeci/" target="_blank" rel="noopener noreferrer" className="social-icons">
+                        <TbBrandLinkedin size={125} />
+                    </a>
+                    <a href="https://www.github.com/gecitgit" target="_blank" rel="noopener noreferrer" className="social-icons">
+                        <TbBrandGithub size={125} />
+                    </a>
+                </div>
+                <p>Feel free to explore my projects and professional journey.</p>
+                <h3>Drop Me a Message:</h3>
+                <p>Whether you have a question, project idea, or just want to say hi, I'd love to hear from you!</p>
+                <ContactForm />
+            </div>
         </div>
     )
 }

@@ -4,8 +4,7 @@ import ProjTile from "./ProjTile";
 function Projects({ projectData }) {
     return (
         <div className="proj-container">
-            <h1>project header</h1>
-            <p>project body</p>
+            <p className="proj-header">A Selection of My Works</p>
             {projectData.map((proj) => (
                 <ProjTile key={proj.id} proj={proj}/>
             ))}
