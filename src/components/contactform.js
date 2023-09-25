@@ -31,14 +31,14 @@ function ContactForm() {
                 action="https://formspree.io/f/mleypooa"
                 method="POST"
             >
-                <label>Name:</label>
-                <input type="text" name="name" required />
+                <label htmlFor='visitor-name'>Name:</label>
+                <input type="text" id="visitor-name" required />
 
-                <label>Email:</label>
-                <input type="email" name="email" required />
+                <label htmlFor='visitor-email'>Email:</label>
+                <input type="email" id="visitor-email" required />
 
-                <label>Message:</label>
-                <textarea name="message" required></textarea>
+                <label htmlFor='visitor-message'>Message:</label>
+                <textarea id="visitor-message" required></textarea>
 
                 <button type="submit">Send</button>
             </form>

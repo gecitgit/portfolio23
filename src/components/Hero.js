@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import headshot from '../pics/VECTOR OUTLINE WEBP.webp'
 import bgLarge from '../pics/bg-gif-large.gif'
+import bgwebm from '../pics/bg-vid-webm.webm'
 
 function Hero(){
     const el = useRef(null);
@@ -36,7 +37,9 @@ function Hero(){
             <img 
                 src={headshot} 
                 alt="headshot"
-                className="headshot"    
+                className="headshot"
+                height="100%"
+                width="100%"   
             />
         </div>
     )

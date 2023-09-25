@@ -29,7 +29,7 @@ input, textarea {
 button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #5384c1;
+    background-color: #1a1824;
     color: #fff;
     font-weight: bolder;
     border: none;
@@ -38,7 +38,8 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #7faee9;
+    color: #1a1824;
 }
 
 /* Responsive adjustments for mobile views */
