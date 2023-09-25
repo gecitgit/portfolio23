@@ -9,7 +9,9 @@
             "gitlink": "https://github.com/gecitgit/gradebook",
             "livelink": "https://gradebook.taulant.dev/",
             "demovid": "https://www.youtube.com/",
-            "id": 1
+            "id": 1,
+            "demoUser" : "demo@example.com",
+            "demoPass" : "testing"
         },
         {
             "title": "MindLOG v2",
@@ -20,7 +22,9 @@
             "gitlink": "https://github.com/gecitgit/mindlog-v2",
             "livelink": "https://mindlog.taulant.dev/",
             "demovid": "https://www.youtube.com/",
-            "id": 2
+            "id": 2,
+            "demoUser" : "demo@example.com",
+            "demoPass" : "testing"
         },
         {
             "title": "Animanga Search Pal",

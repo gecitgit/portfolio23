@@ -2,6 +2,7 @@ import React from "react";
 import ASLPIC from '../pics/ASL-webp.webp'
 import GBPIC from '../pics/gradebook-webp.webp'
 import MLPIC from '../pics/mindlog-webp.webp'
+import DemoDetails from "./DemoDetails";
 
 const imageMap = {
     'GBPIC': GBPIC,
@@ -24,6 +25,7 @@ function ProjTile({proj}) {
             </div>
             <div className="proj-card-info">
                 <p><strong>Summary: </strong> {proj.summary}</p>
+                <DemoDetails user={proj.demoUser} pass={proj.demoPass} />
             </div>
             <div className="proj-card-btns-cont">
                 <a href={proj.livelink} target="_blank" rel="noopener noreferrer" className="proj-btns" name="hosted" aria-label="Click to visit the hosted version of this app.">Live Link</a>
