@@ -32,13 +32,13 @@ function ContactForm() {
                 method="POST"
             >
                 <label htmlFor='visitor-name'>Name:</label>
-                <input type="text" id="visitor-name" required />
+                <input type="text" id="visitor-name" name="name" required />
 
                 <label htmlFor='visitor-email'>Email:</label>
-                <input type="email" id="visitor-email" required />
+                <input type="email" id="visitor-email" name="email" required />
 
                 <label htmlFor='visitor-message'>Message:</label>
-                <textarea id="visitor-message" required></textarea>
+                <textarea id="visitor-message" name="message" required></textarea>
 
                 <button type="submit">Send</button>
             </form>
