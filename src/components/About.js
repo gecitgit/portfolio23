@@ -3,7 +3,7 @@ import { TbBrandHtml5, TbBrandCss3, TbBrandJavascript, TbBrandReact, TbBrandNext
 
 function About() {
     return (
-        <div className="about-box">
+        <div className="about-box" id="about">
             <p className="about-header">Personalized Pedagogy to Programming</p>
             <p className="about-text">My journey from being an educator to a software engineer is driven by a passion for creating tailored experiences. As a teacher and director, I championed a 1:1 education model, emphasizing individualized instruction.  The foundation has seamlessly translated into crafting digital solutions that address unique user needs.</p>
             <p className="about-header">Tools of the Trade</p>

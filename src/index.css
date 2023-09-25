@@ -1,3 +1,8 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -28,6 +33,10 @@ body {
 
 .nav-bar a.active {
   background-color: #22283d;
+}
+.nav-bar a:link {
+  color: #a1c4e8;
+  text-decoration: none;
 }
 
 .App {
@@ -79,7 +88,7 @@ body {
 }
 .proj-card-picbox img{
   border: 2px solid #1a1824;
-  max-height: 200px;
+  max-width: 350px;
 }
 .proj-card-picbox p{
   padding: 5px;
@@ -89,7 +98,7 @@ body {
   grid-area: 2 / 3 / 4 / 6;
 }
 .proj-card-info p{
-  padding: 5px;
+  padding: 15px;
   margin: 5px;
   text-align: left;
   text-justify: center;
@@ -138,9 +147,18 @@ body {
     grid-template-rows: 0.5fr repeat(4, 1fr) 0.5fr;
   }
   .proj-card-title {grid-area: 1 / 1 / 2 / 6}
-  .proj-card-picbox {grid-area: 2 / 1 / 4 / 6}
+  .proj-card-picbox {
+    grid-area: 2 / 1 / 4 / 6;
+    padding: 10px;
+  }
   .proj-card-info {grid-area: 4 / 1 / 6 / 6}
   .proj-card-btns-cont {grid-area: 6 / 1 / 7 / 6}
+  .proj-card-picbox img{
+    max-width: 100vw;
+  }
+  .proj-pic {
+    margin: 0;
+  }
 }
 
 .hero-body {

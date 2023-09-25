@@ -27,7 +27,7 @@ function Hero(){
     }, []);
 
     return (
-        <div className="hero-body">
+        <div className="hero-body" id="hero">
             <img src={bgLarge} alt="gif for background page of random coding" className="backgroundGIF" />
             <div className="hero-text">
                 <h1>Hi, I'm <span style={{ color: "#113969"}}>Taulant!</span></h1>
