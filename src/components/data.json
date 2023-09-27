@@ -3,7 +3,7 @@
         {
             "title": "Gradebook v2",
             "subtitle": "Elevating Tutor Tracking with NextJS & Firebase",
-            "summary": "A robust platform tailored for tutors and educators to efficiently manage their student rosters. Features include the ability to add students, track and save assignments with associated grades and personalized feedback.  Streamlines the academic management process for educators, particularly those with a mixed student load.",
+            "summary": "A robust platform tailored for tutors and educators to efficiently manage their student rosters. Features include the ability to add students,  and track and save assignments with associated grades and personalized feedback.  Streamlines the academic management process for educators, particularly those with a mixed student load.",
             "pic": "GBPIC",
             "alttext": "Viewing a student's profile page",
             "gitlink": "https://github.com/gecitgit/gradebook",
